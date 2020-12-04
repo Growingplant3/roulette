@@ -1,0 +1,13 @@
+<div class="card m-4 p-4">
+  <h1>これはルーレットです。</h1>
+  <hr>
+  <div class="card-body">
+    <h3>本日の出席者をインスタンス変数に設定してください。</h5>
+    <p>
+      <h5>現在のインスタンス変数の中身</h5>
+      全<%= @members.length %>名：<%= @members %>
+    </p>
+    <h2>インスタンス変数の中身が正しくセットできたら開始！</h2>
+  </div>
+  <%= link_to "ルーレットスタート", new_roulette_path(@members), class: "btn btn-primary" %>
+</div>
